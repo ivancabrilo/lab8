@@ -1,0 +1,195 @@
+.lead {
+  display: flex;
+  align-items: flex-start; /* Ensure top alignment */
+  justify-content: center; /* Center the content and image combination */
+  max-width: 1400px;
+  margin: 30 auto; /* Center the entire section in the viewport */
+  margin-top: 1rem;
+  border-radius: 2.3%;
+  border-color: #ad235e;
+  border-style: solid;
+  border-width: 2px;
+  border-right: 10px;
+  border-left: 10px;
+  padding-left: 5px;
+}
+
+.mycontent {
+  flex-basis: 60%; /* Takes up 60% of the  width */
+  padding-right: 20px;
+  padding-left: 30px;
+}
+
+.lead img {
+  flex-basis: 40%; /* Takes up 40% of the  width */
+  width: 400px;
+  height: 275px;
+  padding-top: 80px;
+  margin-left: 40px;
+  padding-right: 20px;
+  margin-bottom: 3rem;
+  align-items: center;
+  margin-bottom: 4.5rem;
+}
+
+body {
+  background-color: #dfeff0;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #ad235d;
+  border-bottom: 2px solid #ad235d;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 2em;
+  color: #3498db;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
+ol,
+ul {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #7d9c9e;
+  text-decoration: none;
+  border-bottom: 1px solid #7d9c9e;
+}
+
+a:hover {
+  color: #ad235e;
+  border-bottom-color: #ad235e;
+}
+
+.artcontainer {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1000px;
+  width: 85%;
+}
+
+.shark-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.shark-grid-item {
+  background-color: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.shark-grid-item div {
+  font-family: "Bungee", cursive;
+  color: white;
+  font-size: larger;
+}
+
+.shark-grid-item img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+#subtitle h2 {
+  color: #001f3f;
+  padding-bottom: 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2:1 ratio for the main content and the aside */
+  grid-template-rows: auto auto 1fr auto; /* Four rows: header, lead, main content (article+aside), footer */
+  gap: 20px; /* spacing between rows and columns */
+  max-width: 1400px;
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+header,
+footer {
+  grid-column: 1 / -1; /* Span the full width */
+}
+
+.lead {
+  grid-row: 2;
+  grid-column: 1 / -1; /* Span the full width */
+}
+
+.aside {
+  margin-top: 2rem;
+}
+
+footer {
+  padding: 40px;
+  background-color: #333;
+  color: #f3f3f3;
+}
+
+footer h2 {
+  border: none;
+  color: #fff;
+  margin-top: 0;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.box li {
+  flex: 0 1 calc(33.333% - 20px); /* Three boxes per row, with spacing in between */
+  list-style-type: none;
+  margin: 10px;
+  padding: 15px;
+  background-color: #444;
+  border-radius: 5px;
+  transition: all 0.3s ease; /*  smooth hover effect */
+}
+
+.box li a {
+  text-decoration: none;
+  color: #ad235d;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.box li a:hover {
+  color: #f3f3f3;
+}
+
+.box li:hover {
+  background-color: #555; /* Slightly brighter on hover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
