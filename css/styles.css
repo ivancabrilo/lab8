@@ -87,19 +87,20 @@ a:hover {
   max-width: 1200px;
   width: 95%;
 }
-
 .shark-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* This ensures 3 columns */
+  gap: 2vw; /* Relative unit */
   list-style-type: none;
   padding: 0;
   margin: 0;
+  max-width: 1200px; /* Prevents the grid from stretching too wide */
+  margin: 0 auto; /* Centers the grid */
 }
 
 .shark-grid-item {
   background-color: #34495e;
-  padding: 6px;
+  padding: 2vw; /* Relative unit */
   border-radius: 10px;
   text-align: center;
 }
@@ -107,12 +108,12 @@ a:hover {
 .shark-grid-item div {
   font-family: "Bungee", cursive;
   color: white;
-  font-size: larger;
+  font-size: 1.5vw; /* Relative font size */
 }
 
 .shark-grid-item img {
   width: 85%;
-  height: 80%;
+  height: auto; /* To maintain the aspect ratio */
   border-radius: 10px;
   max-width: 400px;
   margin: 0 auto;
