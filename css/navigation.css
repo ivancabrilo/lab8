@@ -1,0 +1,45 @@
+nav ul {
+  list-style-type: none;
+  margin-bottom: 1.2rem;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  text-decoration: none; /* Removing default underline */
+  padding: 10px 15px; /* Adding padding to make them look like button and to increase clickable area */
+  display: block; /* Turning anchor tags from inline to block */
+  color: #333;
+  border: 1px solid transparent; /* transparent border  */
+  position: relative; /*  underline positioning */
+}
+
+nav li a:hover {
+  color: white;
+  background-color: #007bff;
+  border: 1px solid #007bff;
+}
+
+nav li a.is-current {
+  color: #007bff; /* Changing text color of the current item */
+  background-color: wheat;
+  border: 2px solid #555; /* Changing border color of the current item */
+  pointer-events: none; /* Makes the link unclickable */
+  cursor: default; /* Default cursor instead of the pointer */
+}
+
+nav li a.is-current:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: 0; /* Align it to the bottom */
+  left: 0; /* Start from the left */
+}
