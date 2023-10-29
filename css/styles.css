@@ -92,9 +92,9 @@ a:hover {
   grid-template-columns: repeat(3, 1fr); /* This ensures 3 columns */
   gap: 2vw; /* Relative unit */
   list-style-type: none;
-  padding: 0;
+  padding-top: 1rem;
   margin: 0;
-  max-width: 1200px; /* Prevents the grid from stretching too wide */
+  max-width: 90%; /* Prevents the grid from stretching too wide */
   margin: 0 auto; /* Centers the grid */
 }
 
