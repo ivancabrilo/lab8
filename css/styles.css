@@ -58,8 +58,8 @@ h2 {
   background-image: url("../images/resized_shark.png");
   background-repeat: no-repeat;
   background-position: center left;
-  padding-left: 50px; /* Adjust as needed */
-  background-size: 40px; /* Assuming your logo is 40x40 pixels */
+  padding-left: 50px; /* Space for the logo */
+  background-size: 40px; /* Logo 40x40 pixels */
 }
 
 p {
@@ -222,6 +222,6 @@ header,
 
 .lead h2,
 .lead p {
-  color: black; /* Or another color that contrasts well with your background */
-  text-shadow: 0.5px 0.5px 1px #000000; /* Example shadow, adjust as needed */
+  color: black; /* Text color */
+  text-shadow: 0.5px 0.5px 1px #000000; /* Text shadow */
 }
